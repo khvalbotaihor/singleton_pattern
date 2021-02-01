@@ -12,19 +12,19 @@
 </body>
 </html>
 <script>
-var counterModule = ( function () {
-    var counter = 0;
-    var instance;
+const counterModule = ( function () {
+    let counter = 0;
+    let instance;
 
-    var getCounter = function () {
+    const getCounter = function () {
         return counter
     }
 
-    var increaseCounter = function () {
+    const increaseCounter = function () {
         counter++
     }
 
-    var createInstance = function () {
+    const createInstance = function () {
         return{
             getCounter: getCounter,
             increaseCounter: increaseCounter
